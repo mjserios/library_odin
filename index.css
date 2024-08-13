@@ -1,0 +1,133 @@
+* {
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: block;
+    background-color: #F2F2F2;
+}
+
+header {
+    background-color: #2C3E50;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+header > img {
+    height: 3em;
+    filter: invert(94%) sepia(0%) saturate(7500%) hue-rotate(78deg) brightness(113%) contrast(105%);
+}
+
+.container {
+    background-color: #F2F2F2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.newbuk {
+    display: flex;
+    flex: 0 0 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.newbuk button {
+    font-weight: 600;
+    font-size: 1.7em;
+    padding: 0.8em;
+    margin: 0.8em;
+    background-color: #B084CC;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1em;
+    margin: 0 2em 2em 2em;
+
+}
+
+.grids > div {
+    background-color: white;
+    padding: 1em;
+}
+
+#bookDialog {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+#bookForm {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    justify-content: space-evenly;
+    gap: 1em;
+    width: 40vw;
+}
+
+#read {
+    height: 1.4em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons button {
+    padding: 1em;
+    background-color: #B084CC;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.grids div {
+    display: flex;
+    gap: 0.7em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grids div p {
+    font-style: italic;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+.grids div button {
+    padding: 0.7em;
+    border: none;
+    color: white;
+    border-radius: 15px;  
+}
+
+.delButton {
+    background-color: #A63D40;
+}
+
+.readToggle {
+    background-color: #E9B872;
+}
+
